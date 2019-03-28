@@ -2,13 +2,12 @@
 
 **Undefined films** is a movie and series searcher with over 280,000 items at your disposal. Also, you can manage your favorites movies or series in your favorites panel
 
-========================
-This is a group project developed inside Skylab Coders Academy in Barcelona.
-========================
-
 ## Colaborators
+This is a group project developed inside Skylab Coders Academy in Barcelona.
 [JordiRoronoa](https://github.com/JordiRoronoa)
 [TachiiRocks](https://github.com/TachiiRocks)
+
+- to see all commits you can go to [undefined project with all commits](https://github.com/JordiRoronoa/skylab-bootcamp-201901/tree/feature/undefined/staff/groups/undefined/undefined)
 
 ## [Documentation](doc/README.md)
 
