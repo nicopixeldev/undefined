@@ -9,17 +9,17 @@
 ### Use Cases
 
 An anonymous user can:
-    * Register
-    * Login
-    * Search for movies and series
-    * See the details
+* Register
+* Login
+* Search for movies and series
+* See the details
 
 A logged in user can:
-    * Register
-    * Login
-    * Search for movies and series
-    * See the details
-    * Add a movie or serie to your favorites panel
+* Register
+* Login
+* Search for movies and series
+* See the details
+* Add a movie or serie to your favorites panel
 
 ![Use Cases](images/use-case.png)
 
