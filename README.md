@@ -9,9 +9,7 @@ This is a group project developed inside Skylab Coders Academy in Barcelona.
 
 - to see all commits you can go to [undefined project with all commits](https://github.com/JordiRoronoa/skylab-bootcamp-201901/tree/feature/undefined/staff/groups/undefined/undefined)
 
-## [Documentation](doc/README.md)
-
-## [Live Demo](https://undefined-skylab.surge.sh)
+## Live demo and more in [Documentation](doc/README.md)
 
 ## Available Scripts
 
