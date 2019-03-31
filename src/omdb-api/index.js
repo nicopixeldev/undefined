@@ -29,7 +29,7 @@ const omdbApi = {
             { key: 'query', value: query, type: String },
             { key: 'count', value: count, type: Number }
         ])
-
+        
         return fetch(`${this.url}&s=${query}&page=${count}`)
             .then(response => response.json())
             .then(response => {
