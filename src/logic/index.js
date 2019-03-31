@@ -125,7 +125,7 @@ const logic = {
     /**
      * modify the user's parameters
      * 
-     * @param {Array} email - email user 
+     * @param {Array} favorites - email user 
      *   
      * @throws {TypeError} - On wrong parameters type.
      * @throws {Error} - On empty parameters value.
@@ -139,7 +139,7 @@ const logic = {
     /**
     * 
     * @param {string} -  id the user's name.
-
+    * 
     * @retuns {Promise} - shows the user's parameters and then modifies them
     * 
     * @throws {TypeError} - On wrong parameters type.
