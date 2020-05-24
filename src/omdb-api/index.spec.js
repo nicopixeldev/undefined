@@ -67,7 +67,7 @@ describe('ombd-api' , () => {
             Actors: 'Jason Robards, Richard Jordan, David Selby, Anne Archer',
             Runtime: '115 min',
             imdbID: 'tt0081400',
-            imdbRating: '4.8'
+            imdbRating: '4.9'
         }
         const itemId = expectedResult.imdbID
 

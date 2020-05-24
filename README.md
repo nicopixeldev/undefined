@@ -1,67 +1,72 @@
-# UNDEFINED FILMS
+# UNDEFINED FILMS APP
+
+## Introduction
 
 **Undefined films** is a movie and series searcher with over 280,000 items at your disposal. Also, you can manage your favorites movies or series in your favorites panel
 
-## Colaborators
-This is a group project developed inside Skylab Coders Academy in Barcelona.
-[JordiRoronoa](https://github.com/JordiRoronoa)
-[TachiiRocks](https://github.com/TachiiRocks)
+[Live Demo](https://nico-undefined.surge.sh/)
+the firs load you have to wait because the server are sleeping 😴😴
 
-- to see all commits you can go to [undefined project with all commits](https://github.com/JordiRoronoa/skylab-bootcamp-201901/tree/feature/undefined/staff/groups/undefined/undefined)
+## Functional Description
 
-## Live demo and more in [Documentation](doc/README.md)
+### Use Cases
 
-## Available Scripts
+An anonymous user can:
+* Register
+* Login
+* Search for movies and series
+* See the details
 
-In the project directory, you can run:
+A logged in user can:
+* Register
+* Login
+* Search for movies and series
+* See the details
+* Add a movie or serie to your favorites panel
 
-### `npm start`
+### Flows
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### List Videos
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The path starts always with the search functionality. When a user see the detail can add it to your favorites. If the user is not logged will be redirected to the signup page.
 
-### `npm test`
+![List Videos Flow](./doc/images/flow.png)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technical Description
 
-### `npm run build`
+### Blocks
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Blocks](./doc/images/blocks.png)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Components](./doc/images/components.png)
 
-### `npm run eject`
+### Data Model
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Data Model](./doc/images/data_model.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Technologies
+<div style="display: flex; flex-wrap: wrap; flex-direction:row; align-items: center">
+<img src="./doc/images/logos/bulma.png" alt="bulma css" width="130px" />
+<img src="./doc/images/logos/es6.png" alt="es6 js" width="130px" />
+<img src="./doc/images/logos/html5.png" alt="html5" width="130px" />
+<img src="./doc/images/logos/font-awesome.png" alt="font awesome css" width="130px" />
+<img src="./doc/images/logos/jest.png" alt="jest test" width="130px" />
+<img src="./doc/images/logos/npm.png" alt="npm" width="130px" />
+<img src="./doc/images/logos/react.png" alt="react" width="130px" />
+<img src="./doc/images/logos/sass.png" alt="sass" width="130px" />
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Code Coverage
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Code Coverage](./doc/images/coverage.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Project description
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![Login Page](./doc/images/login_page.png)
+![Register Page](./doc/images/register_page.png)
+![Results Page](./doc/images/the_office_search.png)
+![Favorites Page](./doc/images/favorites_page.png)
+![Add to Favorites Page](./doc/images/add_to_favorite.png)

@@ -6,9 +6,7 @@ import Detail from '../Detail'
 import logic from '../../logic'
 import Feedback from '../Feedback'
 
-
 import './index.sass'
-
 
 class Results extends Component  {
     
@@ -69,6 +67,7 @@ class Results extends Component  {
     }
 
     render() {
+        console.log('<Results /> props', this.props)
         const { state : {results, searchFeedback}, handleVideoClick, handleMoreResults } = this
             
         return (
@@ -82,7 +81,7 @@ class Results extends Component  {
                     /> 
                 )}
 
-                { searchFeedback && <Feedback message={searchFeedback} level="warn" /> }
+                {searchFeedback && <Feedback message={searchFeedback} level="warn" />}
 
                 <Route path='/home/videos/:query/detail/:id' component={Detail}/>
                 <hr />
