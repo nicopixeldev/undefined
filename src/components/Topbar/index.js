@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Route } from 'react-router-dom'
 import logic from '../../logic';
 
@@ -8,6 +8,7 @@ function Topbar({ onGoToHome, onGoToFavorites, onLogout, onGoToRegister, onGoToL
     return <nav className="topbar navbar is-fullwidth" role="navigation" aria-label="main navigation">
         <div className="topbar__inner container inner-container">
             <div className="navbar-brand">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className="navbar-item" onClick={onGoToHome} href="#">
                     <span className="logo">UNDEFINED<span className="films">films</span></span>
                 </a>

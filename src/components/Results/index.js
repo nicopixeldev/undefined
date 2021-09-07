@@ -67,7 +67,6 @@ class Results extends Component  {
     }
 
     render() {
-        console.log('<Results /> props', this.props)
         const { state : {results, searchFeedback}, handleVideoClick, handleMoreResults } = this
             
         return (
