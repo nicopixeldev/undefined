@@ -9,6 +9,25 @@
 
 ---
 
+## Visual Overview
+
+### Login Page
+![Login Page](./doc/images/login_page.png)
+
+### Register Page
+![Register Page](./doc/images/register_page.png)
+
+### Search Results Page
+![Results Page](./doc/images/the_office_search.png)
+
+### Favorites Page
+![Favorites Page](./doc/images/favorites_page.png)
+
+### Adding to Favorites
+![Add to Favorites Page](./doc/images/add_to_favorite.png)
+
+---
+
 ## Functional Description
 
 ### Use Cases
@@ -86,22 +105,3 @@ The app is built using modern web development technologies:
 The project includes comprehensive unit testing with Jest, ensuring reliability and robustness.
 
 ![Code Coverage](./doc/images/coverage.png)
-
----
-
-## Visual Overview
-
-### Login Page
-![Login Page](./doc/images/login_page.png)
-
-### Register Page
-![Register Page](./doc/images/register_page.png)
-
-### Search Results Page
-![Results Page](./doc/images/the_office_search.png)
-
-### Favorites Page
-![Favorites Page](./doc/images/favorites_page.png)
-
-### Adding to Favorites
-![Add to Favorites Page](./doc/images/add_to_favorite.png)
