@@ -1,27 +1,40 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { HashRouter } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.sass";
+import { BrowserRouter } from "react-router-dom";
 
-import './index.sass'
+import App from "./components/App";
+import reportWebVitals from "./reportWebVitals";
 
-import App from './components/App'
-import * as serviceWorker from './serviceWorker'
-import omdbApi from './omdb-api'
-import logic from './logic'
+import omdbApi from "./omdb-api";
+import logic from "./logic";
 
-logic.setUserId = id => id? sessionStorage.setItem('user-id', id) : sessionStorage.removeItem('user-id')
-logic.getUserId = () => sessionStorage.getItem('user-id')
+logic.setUserId = (id) =>
+  id
+    ? sessionStorage.setItem("user-id", id)
+    : sessionStorage.removeItem("user-id");
+logic.getUserId = () => sessionStorage.getItem("user-id");
 
-logic.setUserApiToken = token => token? sessionStorage.setItem('user-api-token', token) : sessionStorage.removeItem('user-api-token')
-logic.getUserApiToken = () => sessionStorage.getItem('user-api-token')
+logic.setUserApiToken = (token) =>
+  token
+    ? sessionStorage.setItem("user-api-token", token)
+    : sessionStorage.removeItem("user-api-token");
+logic.getUserApiToken = () => sessionStorage.getItem("user-api-token");
 
-const { REACT_APP_API_OMDB_URL, REACT_APP_API_OMDB_KEY } = process.env
+const { REACT_APP_API_OMDB_URL, REACT_APP_API_OMDB_KEY } = process.env;
 
-omdbApi.url = `${REACT_APP_API_OMDB_URL}?apikey=${REACT_APP_API_OMDB_KEY}`
+omdbApi.url = `${REACT_APP_API_OMDB_URL}?apikey=${REACT_APP_API_OMDB_KEY}`;
 
-ReactDOM.render(<HashRouter><App /></HashRouter>, document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister()
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
